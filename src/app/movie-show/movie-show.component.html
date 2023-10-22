@@ -1,1 +1,11 @@
-<p>movie-show works!</p>
+<h2>Поисковик</h2>
+<input [(ngModel)]="title" placeholder="Введите название фильма">
+<button (click)="Search()">Найти</button>
+<div *ngIf="data">
+  <h3>{{ data.Title }}</h3>
+  <p>Год выпуска: {{ data.Year }}</p>
+  <p>Рейтинг: {{ data.Rating }}</p>
+  <p>Длительность: {{ data.Runtime }}</p>
+  <p>Режиссер: {{ data.Director }}</p>
+  <p>Актерский состав: {{ data.Actors }}</p>
+</div>
