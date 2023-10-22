@@ -1,0 +1,10 @@
+<div>
+    <h1>Орел и Решка</h1>
+    <p>Cделайте выбор "орел" или "решка"</p>
+    <select [(ngModel)] = "choice">
+        <option value="Orel">Орел</option>
+        <option value="Reshka">Решка</option>
+    </select>
+    <button (click)="rndCoin()">start</button>
+    <p>{{result}}</p>
+</div>
